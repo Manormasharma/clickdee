@@ -1,0 +1,21 @@
+@import url("./variable.scss");
+@mixin small {
+    @media (min-width: $sm) {
+        @content;
+    }
+}
+@mixin medium {
+    @media only screen and (min-width: $md) {
+        @content;
+    }
+}
+@mixin large {
+    @media only screen and (min-width: $lg) {
+        @content;
+    }
+}
+@mixin xlarge {
+    @media only screen and (min-width: $xl) {
+        @content;
+    }
+}
